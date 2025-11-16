@@ -1,0 +1,27 @@
+{
+  "name": "bar-kitchen-pos-backend",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test:db": "node test-connection.js",
+    "init:users": "node init-users.js",
+    "add:products": "node add-products.js",
+    "migrate:users": "node migrate-existing-users.js"
+  },
+  "type": "module",
+  "dependencies": {
+    "express": "^4.18.2",
+    "mysql2": "^3.6.0",
+    "dotenv": "^16.3.1",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "express-validator": "^7.0.1",
+    "socket.io": "^4.6.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}
